@@ -1,0 +1,85 @@
+.file {
+  margin: 10px 0;
+  border-bottom: solid 2px #566885;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+  cursor: pointer;
+}
+.file:hover {
+  transform: scale(1.02);
+}
+.file__img {
+  justify-self: center;
+}
+.file__date {
+  grid-column-start: 5;
+  justify-self: center;
+}
+.file__size {
+  grid-column-start: 6;
+  justify-self: center;
+}
+.file__btn {
+  display: none;
+}
+.file:hover .file__date {
+  grid-column-start: 3;
+}
+.file:hover .file__size {
+  grid-column-start: 4;
+}
+.file:hover .file__download {
+  grid-column-start: 5;
+  display: block;
+}
+.file:hover .file__delete {
+  grid-column-start: 6;
+  display: block;
+}
+.file-plate {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.file-plate__img {
+  height: 100px;
+  width: 100px;
+}
+.file-plate__btns {
+  display: none;
+}
+.file-plate:hover .file-plate__btns {
+  display: flex;
+}
+
+.file__delete,
+.file__download,
+.file-plate__delete,
+.file-plate__download {
+  width: 55px;
+  height: 35px;
+  padding: 10px 15px;
+  border: 1px solid #566885;
+  box-sizing: border-box;
+  border-radius: 37px;
+  /* background: url('../../assets/img/arrow-back.svg') no-repeat center; */
+}
+.file__delete,
+.file-plate__delete {
+  background: url('../../../../assets/img/delete.svg') no-repeat center;
+}
+.file__download,
+.file-plate__download {
+  background: url('../../../../assets/img/download.svg') no-repeat center;
+}
+
+.file__delete:hover,
+.file__download:hover,
+.file-plate__delete:hover,
+.file-plate__download:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+}
