@@ -1,6 +1,7 @@
 # Single Page Application - Cloud disk
 
-Technologies: 
+Technologies:
+
 -Client part: React, Redux, Typescript <br />
 -Server part: MongoDB, Express.js, Node.js <br />
 
